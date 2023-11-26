@@ -1,0 +1,4 @@
+<input type="number" />
+<input type="email" />
+<input type="password" />
+const itemNumber = parseInt(number, 10);
