@@ -11,6 +11,7 @@ import LoginPage from "./components/loginoage";
 import Stopwatch from "./components/stopwatch";
 import CurrencyConverter from "./components/currnecyconversion";
 import WelcomePage from "./components/welcome";
+import FormValidationExample from "./components/formvalidation";
 function App() {
 	//CustomerName, CustomerNumber (Unique for a customer), City, State and Pincode.  
 	const [customers, setCustomers] = useState([]);
@@ -39,6 +40,8 @@ function App() {
 		  <Link to="/loginpage" className="btn btn-dark btn-outline-light">Login</Link>
 		  <Link to="/stopwatch" className="btn btn-dark btn-outline-light">Stop Watch</Link>
 		  <Link to="/currencycon" className="btn btn-dark btn-outline-light">Currency Converter</Link>
+		  <Link to="/formvalidation" className="btn btn-dark btn-outline-light">form </Link>
+
         </nav>
 				<Routes>
 					<Route path="/" element={<HomePage/>}/><Route  />
@@ -51,6 +54,7 @@ function App() {
 					<Route path="/stopwatch" element={<Stopwatch/>}/><Route  />
 					<Route path="/currencycon" element={<CurrencyConverter/>}/>
 					<Route path="/welcome/:username" element={<WelcomePage />} />
+					<Route path="/formvalidation" element={<FormValidationExample />} />
 				</Routes>
 			</Router>
 		    

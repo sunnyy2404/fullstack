@@ -202,7 +202,7 @@ app.delete("/items/:number", async (req, res) => {
 		res.json({ message: "Item deleted" });
 	  }
 	} catch (error) {
-	  console.log('Deleting item with number:');
+	  console.log(`Error in Deleting item with number ${number}`);
 	  res.status(500).send(error.toString());
 	}
   });
